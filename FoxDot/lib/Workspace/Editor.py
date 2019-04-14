@@ -696,7 +696,7 @@ class workspace:
         return "break"
 
     def loadfile(self, path):
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             self.set_all(f.read())
         return
 
